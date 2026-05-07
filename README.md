@@ -1,5 +1,5 @@
 ## 更新
-- 已支持了已支持谷歌 Manifest V3协议
+- 已支持谷歌 Manifest V3协议
 - 针对 bandcamp 网站的采集按钮优化
 - logo 重新设计
 
