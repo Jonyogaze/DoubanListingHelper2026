@@ -1,2 +1,0 @@
-# DoubanListingHelper2026
-这是一个用给豆瓣网站提供一键添加条目的功能插件。
