@@ -1,7 +1,6 @@
-## 更新
-- 已支持谷歌 Manifest V3协议
-- 针对 bandcamp 网站的采集按钮优化
-- logo 重新设计
+## 注意
+- github 上将不再更新
+- 最新版请在谷歌扩展商店下载 https://chromewebstore.google.com/detail/fgiimnbcoeeaghfoiidhfdbeaklkojae?utm_source=item-share-cb
 
 ## 条目添加场景
 - 音乐（Discogs/Bandcamp/Apple Music）
