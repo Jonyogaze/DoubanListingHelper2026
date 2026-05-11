@@ -3,7 +3,7 @@
 - 最新版请在谷歌扩展商店下载 https://chromewebstore.google.com/detail/fgiimnbcoeeaghfoiidhfdbeaklkojae?utm_source=item-share-cb
 
 ## 条目添加场景
-- 音乐（Discogs/Bandcamp/Apple Music）
+- 音乐（Discogs/Bandcamp/）
 - 电影(IMDB)
 - 游戏（Steam）
 
