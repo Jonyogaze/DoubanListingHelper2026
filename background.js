@@ -41,6 +41,8 @@ chrome.runtime.onMessage.addListener((msg, sender) => {
     case "bandcamp":
     case "discogs":
     case "apple":
+    case "spotify":
+    case "netease":
     case "steam":
     case "imdb": {
       let data = null;
@@ -56,10 +58,10 @@ chrome.runtime.onMessage.addListener((msg, sender) => {
         console.error("Failed to persist metadata", error);
       });
 
-      if (data.imgUrl) {
+      if (data.imgUrl && /^https?:\/\//.test(data.imgUrl)) {
         chrome.downloads.download({ url: data.imgUrl }, () => {
           if (chrome.runtime.lastError) {
-            console.error("Image download failed", chrome.runtime.lastError.message);
+            console.warn("Image download skipped or failed", chrome.runtime.lastError.message);
           } else {
             console.log("Image downloaded");
           }
@@ -81,9 +83,13 @@ chrome.runtime.onMessage.addListener((msg, sender) => {
             return;
           }
 
-          chrome.tabs.sendMessage(sender.tab.id, { data: JSON.stringify(data) }, () => {
+          chrome.tabs.sendMessage(sender.tab.id, { data: JSON.stringify(data) }, (response) => {
             if (chrome.runtime.lastError) {
-              console.error("Failed to send metadata to Douban tab", chrome.runtime.lastError.message);
+              console.warn("Douban tab is not ready for metadata yet", chrome.runtime.lastError.message);
+              return;
+            }
+            if (!response?.ok) {
+              console.warn("Douban tab received metadata but did not apply it yet");
               return;
             }
             clearPendingData().catch((error) => {

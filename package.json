@@ -1,7 +1,7 @@
 {
   "name": "douban-listing-helper",
-  "version": "0.2.0",
-  "description": "一键添加豆瓣条目 Create Douban listing with one click",
+  "version": "1.8.2",
+  "description": "从来源网站采集条目信息，辅助填写豆瓣新增条目表单",
   "main": "background.js",
   "dependencies": {},
   "devDependencies": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zeqianli/DoubanListingHelper.git"
+    "url": "git+https://github.com/Jonyogaze/DoubanListingHelper2026.git"
   },
   "keywords": [
     "douban"
@@ -20,7 +20,7 @@
   "author": "Zeqian Li",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zeqianli/DoubanListingHelper/issues"
+    "url": "https://github.com/Jonyogaze/DoubanListingHelper2026/issues"
   },
-  "homepage": "https://github.com/zeqianli/DoubanListingHelper#readme"
+  "homepage": "https://github.com/Jonyogaze/DoubanListingHelper2026#readme"
 }
